@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a href="pessoas.html"><button>Visualizar Pessoas</button></a>
+
+    <div class="container">
+        <h1 id="tituloForm">Cadastro de Pessoa</h1>
+        <form id="formPessoa">
+
+            <input type="hidden" id="idPessoa" name="idPessoa">
+            
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required>
+
+            <button type="submit" id="botaoEnviar">Enviar</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
